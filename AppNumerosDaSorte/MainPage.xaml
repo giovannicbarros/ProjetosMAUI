@@ -3,10 +3,12 @@
     x:Class="AppNumerosDaSorte.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="MainPage">
-    <VerticalStackLayout>
+    BackgroundColor="Beige">
+    <VerticalStackLayout Margin="20" BackgroundColor="Bisque">
         <Label
             Margin="10"
+            Padding="30,10,20,40"
+            BackgroundColor="White"
             HorizontalOptions="Center"
             Text="Bem vindo ao MAUI!"
             VerticalOptions="Center" />
