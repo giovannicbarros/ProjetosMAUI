@@ -14,12 +14,12 @@ namespace AppJogoForca.Repositories
         public WordRepositories()
         {
                 _words = new List<Word>();
-                _words.Add(new Word("Nome", "Maria"));
-                _words.Add(new Word("Vegetal", "Cenoura"));
-                _words.Add(new Word("Fruta", "Abacate"));
-                _words.Add(new Word("Carro", "Renegade"));
-                _words.Add(new Word("Moto", "Ducati"));
-                _words.Add(new Word("Moto", "Yamaha"));
+                _words.Add(new Word("Nome", "Maria".ToUpper()));
+                _words.Add(new Word("Vegetal", "Cenoura".ToUpper()));
+                _words.Add(new Word("Fruta", "Abacate".ToUpper()));
+                _words.Add(new Word("Carro", "Renegade".ToUpper()));
+                _words.Add(new Word("Moto", "Ducati".ToUpper()));
+                _words.Add(new Word("Moto", "Yamaha".ToUpper()));
         }
 
         public Word GetRandleWord()
