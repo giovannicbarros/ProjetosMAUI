@@ -19,8 +19,13 @@ namespace AppMAUIGallery.Repositories
                 Components = new List<Component> { 
                     new Component {
                         Title = "StackLayout",
-                        Description = "Organização squencia dos elementos.",
+                        Description = "Organização sequencia dos elementos.",
                         Page = typeof(StackLayoutPage)
+                    },
+                    new Component {
+                        Title = "Grid",
+                        Description = "Organização dos elementos dentro de uma tabela.",
+                        Page = typeof(GridLayoutPage)
                     }
                 }
             });
