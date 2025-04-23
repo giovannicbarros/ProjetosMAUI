@@ -14,52 +14,55 @@
                 Source="forca1.png" />
 
             <Label
+                x:Name="lblTips"
                 FontSize="32"
                 HorizontalOptions="Center"
-                Text="[Dica]" />
+                Text="" />
             <Label
-                FontSize="32"
+                x:Name="lblText"
+                CharacterSpacing="5"
+                FontSize="36"
                 HorizontalOptions="Center"
-                Text="__ __ __ __ __ __" />
+                Text="" />
 
             <VerticalStackLayout>
                 <HorizontalStackLayout
                     Margin="0,0,0,2"
                     HorizontalOptions="Center"
-                    Spacing="2">
-                    <Button Text="Q" />
-                    <Button Text="W" />
-                    <Button Text="E" />
-                    <Button Text="R" />
-                    <Button Text="T" />
-                    <Button Text="Y" />
-                    <Button Text="U" />
-                    <Button Text="I" />
-                    <Button Text="O" />
-                    <Button Text="P" />
+                    Spacing="3">
+                    <Button Clicked="OnButtonClicked" Text="Q" />
+                    <Button Clicked="OnButtonClicked" Text="W" />
+                    <Button Clicked="OnButtonClicked" Text="E" />
+                    <Button Clicked="OnButtonClicked" Text="R" />
+                    <Button Clicked="OnButtonClicked" Text="T" />
+                    <Button Clicked="OnButtonClicked" Text="Y" />
+                    <Button Clicked="OnButtonClicked" Text="U" />
+                    <Button Clicked="OnButtonClicked" Text="I" />
+                    <Button Clicked="OnButtonClicked" Text="O" />
+                    <Button Clicked="OnButtonClicked" Text="P" />
                 </HorizontalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="Center" Spacing="2">
-                    <Button Text="A" />
-                    <Button Text="S" />
-                    <Button Text="D" />
-                    <Button Text="F" />
-                    <Button Text="G" />
-                    <Button Text="H" />
-                    <Button Text="J" />
-                    <Button Text="K" />
-                    <Button Text="L" />
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="3">
+                    <Button Clicked="OnButtonClicked" Text="A" />
+                    <Button Clicked="OnButtonClicked" Text="S" />
+                    <Button Clicked="OnButtonClicked" Text="D" />
+                    <Button Clicked="OnButtonClicked" Text="F" />
+                    <Button Clicked="OnButtonClicked" Text="G" />
+                    <Button Clicked="OnButtonClicked" Text="H" />
+                    <Button Clicked="OnButtonClicked" Text="J" />
+                    <Button Clicked="OnButtonClicked" Text="K" />
+                    <Button Clicked="OnButtonClicked" Text="L" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
                     Margin="0,2,0,30"
                     HorizontalOptions="Center"
-                    Spacing="2">
-                    <Button Text="Z" />
-                    <Button Text="X" />
-                    <Button Text="C" />
-                    <Button Text="V" />
-                    <Button Text="B" />
-                    <Button Text="N" />
-                    <Button Text="M" />
+                    Spacing="3">
+                    <Button Clicked="OnButtonClicked" Text="Z" />
+                    <Button Clicked="OnButtonClicked" Text="X" />
+                    <Button Clicked="OnButtonClicked" Text="C" />
+                    <Button Clicked="OnButtonClicked" Text="V" />
+                    <Button Clicked="OnButtonClicked" Text="B" />
+                    <Button Clicked="OnButtonClicked" Text="N" />
+                    <Button Clicked="OnButtonClicked" Text="M" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
 
