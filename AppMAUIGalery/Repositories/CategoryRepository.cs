@@ -1,4 +1,5 @@
 ﻿using AppMAUIGallery.Models;
+using AppMAUIGallery.Views.Components.Mains;
 using AppMAUIGallery.Views.Layouts;
 
 namespace AppMAUIGallery.Repositories
@@ -16,7 +17,7 @@ namespace AppMAUIGallery.Repositories
             categories.Add(new Category
             {
                 Name = "Layout",
-                Components = new List<Component> { 
+                Components = new List<Component> {
                     new Component {
                         Title = "StackLayout",
                         Description = "Organização sequencia dos elementos.",
@@ -39,6 +40,23 @@ namespace AppMAUIGallery.Repositories
                     }
                 }
             });
+
+            categories.Add(new Category
+            {
+                Name = "Componentes (Views)",
+                Components = new List<Component> {
+                    new Component {
+                        Title = "BoxView",
+                        Description = "Um componente que cria uma caixa para ser apresentada",
+                        Page = typeof(BoxViewPage)
+                    },
+                    new Component {
+                        Title = "Label",
+                        Description = "Apresenta um texto na tela",
+                        Page = typeof(LabelPage)
+                    }
+                }
+            }) ;
 
             return categories;
         }

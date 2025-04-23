@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Components.Mains.LabelPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LabelPage">
+    <VerticalStackLayout>
+
+        <Label
+            Margin="20"
+            FontAttributes="Italic"
+            FontFamily="OpenSansSemibold"
+            FontSize="30"
+            Text="Texto normal"
+            TextTransform="Uppercase" />
+
+        <Label
+            Padding="10"
+            BackgroundColor="AliceBlue"
+            FontSize="32"
+            HorizontalOptions="Fill"
+            Text="html"
+            TextColor="Red"
+            TextTransform="Uppercase"
+            VerticalOptions="Center" />
+
+        <Label Text="Bem-vindo - &lt;i&gt;Texto itálico&lt;/&gt;" TextType="Html" />
+        <Label TextType="Html">
+            <Label.Text>
+                <![CDATA[
+                    <i>Testando itálico</i>
+                ]]>
+            </Label.Text>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>
