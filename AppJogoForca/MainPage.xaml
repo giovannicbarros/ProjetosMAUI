@@ -6,9 +6,16 @@
 
     <ScrollView>
         <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+
+            <Button
+                Margin="0,20"
+                Clicked="OnButtonClickedResetGame"
+                HorizontalOptions="Center"
+                Text="Reiniciar" />
+
             <Image
                 x:Name="ImgForca"
-                Margin="0,20"
+                Margin="0,0,0,20"
                 Aspect="AspectFit"
                 HeightRequest="200"
                 HorizontalOptions="Center"
@@ -21,6 +28,7 @@
                 Text="" />
             <Label
                 x:Name="lblText"
+                Margin="0,0,0,20"
                 CharacterSpacing="5"
                 FontSize="36"
                 HorizontalOptions="Center"
