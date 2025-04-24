@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Components.Forms.CheckBoxPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CheckBoxPage">
+    <VerticalStackLayout Padding="10">
+        <Label
+            x:Name="lblText"
+            HorizontalOptions="Center"
+            Text=""
+            VerticalOptions="Center" />
+        <CheckBox CheckedChanged="CheckBox_CheckedChanged" Color="Brown" />
+    </VerticalStackLayout>
+</ContentPage>
