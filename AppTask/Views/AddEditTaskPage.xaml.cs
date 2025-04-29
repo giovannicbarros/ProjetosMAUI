@@ -21,4 +21,10 @@ public partial class AddEditTaskPage : ContentPage
     {
         var stepName = await DisplayPromptAsync("Etapa(subtarefa)", "Digite o nome da etapa(subtarefa): ", "OK");
     }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+        DatePicker_TaskDate.WidthRequest = width - 40;
+    }
 }
