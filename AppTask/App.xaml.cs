@@ -39,7 +39,7 @@ namespace AppTask
 
         private static void DatePickerNoBorder()
         {
-            Microsoft.Maui.Handlers.DatePickerHandler.Mapper.AppendToMapping("NoBorder", (handler, view) =>
+            Microsoft.Maui.Handlers.DatePickerHandler.Mapper.AppendToMapping("NoBorder", static (handler, view) =>
             {
 #if ANDROID
                 // Android
@@ -47,7 +47,7 @@ namespace AppTask
 
 #elif IOS || MACCATALYST
                 // iOS || MACCatalyst
-                handler.PlatformView.BorderStyle = UIKit.UITextBorderStyle.None;
+                // handler.PlatformView.BorderStyle = UIKit.UITextBorderStyle.None;
 #elif WINDOWS
                 // WINDOWS
                 handler.PlatformView.BorderThickness = new Thickness(0).ToPlatform();

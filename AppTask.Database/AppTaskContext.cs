@@ -9,7 +9,7 @@ using System.Text;
 
 namespace AppTask.Database
 {
-    internal class AppTaskContext : DbContext
+    public class AppTaskContext : DbContext
     {
         public DbSet<TaskModel> Tasks { get; set; }
         public DbSet<SubTaskModel> SubTasks { get; set; }
