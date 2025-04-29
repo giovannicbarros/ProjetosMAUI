@@ -11,7 +11,7 @@ public partial class ListViewPage : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-        ListViewControl.ItemsSource = MovieList.GetGroupList().Take(2);
+        ListViewControl.ItemsSource = MovieList.GetGroupList().Take(3);
     }
 
     private void ListViewControl_ItemSelected(object sender, SelectedItemChangedEventArgs e)

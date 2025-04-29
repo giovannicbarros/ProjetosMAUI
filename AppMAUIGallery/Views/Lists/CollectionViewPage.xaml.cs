@@ -36,7 +36,8 @@ public partial class CollectionViewPage : ContentPage
 
     private void CollectionViewControl_RemainingItemsThresholdReached(object sender, EventArgs e)
     {
-		AddTenMovies();
+		
+        AddTenMovies();
     }
 
 	private void AddTenMovies()
